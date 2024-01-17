@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://i.pinimg.com/474x/89/46/33/894633329c421460ac67bae6b2f55e35.jpg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOTolog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-black h-screen w-screen items-center py-10">
+      <div class="bg-gray-200 w-[80vw] h-full flex flex-col rounded-xl mx-auto">
+        <h1 class="font-bold p-4">Нарисуй планировку:</h1>
+        <div class="mx-auto bg-black p-2">
+          <div class="flex">
+            <button
+              id="button-0"
+              onclick="toggleInput(0)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-4"
+              onclick="toggleInput(4)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-8"
+              onclick="toggleInput(8)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-12"
+              onclick="toggleInput(12)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-16"
+              onclick="toggleInput(16)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-20"
+              onclick="toggleInput(20)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-24"
+              onclick="toggleInput(24)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button>
+          </div>
+          <div class="flex">
+            <button
+              id="button-1"
+              onclick="toggleInput(1)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-5"
+              onclick="toggleInput(5)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-9"
+              onclick="toggleInput(9)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-13"
+              onclick="toggleInput(13)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-17"
+              onclick="toggleInput(17)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-21"
+              onclick="toggleInput(21)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-25"
+              onclick="toggleInput(25)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button>
+          </div>
+          <div class="flex">
+            <button
+              id="button-2"
+              onclick="toggleInput(2)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-6"
+              onclick="toggleInput(6)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-10"
+              onclick="toggleInput(10)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-14"
+              onclick="toggleInput(14)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-18"
+              onclick="toggleInput(18)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-22"
+              onclick="toggleInput(22)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-26"
+              onclick="toggleInput(26)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button>
+          </div>
+          <div class="flex">
+            <button
+              id="button-3"
+              onclick="toggleInput(3)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-7"
+              onclick="toggleInput(7)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-11"
+              onclick="toggleInput(11)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-15"
+              onclick="toggleInput(15)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-19"
+              onclick="toggleInput(19)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-23"
+              onclick="toggleInput(23)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button
+            ><button
+              id="button-27"
+              onclick="toggleInput(27)"
+              class="border border-black h-8 w-8 bg-white"
+            ></button>
+          </div>
+        </div>
+        <button
+          id="check"
+          onclick="check()"
+          class="text-white bg-black mt-10 mx-10 rounded-xl py-2"
+        >
+          Какая у меня база?
+        </button>
+
+        <h1 id="baseOutput" class="text-center font-bold"></h1>
+        <div class="mt-16 flex flex-col hidden" id="utube">
+          <button onclick="youtube()" class="mx-auto">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png?20220706172052"
+              class="w-20"
+            />
+          </button>
+          <p class="w-full text-center text-sm font-bold">
+            Кнопка выше ведет на Youtube с подземельями для твоей базы
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
